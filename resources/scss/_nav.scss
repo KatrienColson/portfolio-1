@@ -1,4 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
 .navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid green;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.name{
+    width: 40%;
+    font-size: 5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $header-l-text;
+    border: 1px solid red;
+    margin-left: 40px;
+}
+.btn-nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     border: 1px solid black;
-    font-size: 30px;
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-end;  
+    } 
+    li{
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
 }
