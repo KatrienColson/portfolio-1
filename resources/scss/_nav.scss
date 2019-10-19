@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap'); //tekst naam katrien
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300&display=swap');
 .navbar{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid green;
     background-color: white;
     justify-content: flex-start;
     align-items: flex-start;
@@ -20,23 +19,28 @@
     justify-content: flex-start;
     align-items: center;
     font-family: $header-l-text;
-    border: 1px solid red;
     margin-left: 40px;
+    letter-spacing: 10px;
 }
 .btn-nav{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid black;
+    align-items: center;
+    justify-content:flex-end;
+    padding-top: 50px; 
+    font-family: $btn-nav;
     
     ul{
         display: flex;
         flex-wrap: wrap;
-        justify-content:flex-end;  
+        font-size: 1rem;
     } 
     li{
         display: flex;
-        justify-content: space-evenly;
         list-style-type: none;
+        padding-left: 40px;
+        margin-left: 70px;
+       
     }
 }
