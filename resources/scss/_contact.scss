@@ -1,13 +1,9 @@
-.photo-background-contact{
-
-}
 .photo-contact {
     /* The image used */
     background-image: url("../img/background-5.jpg");
-
     /* Set a specific height */
-    min-height: 500px; 
-  
+    min-height: 100vh; 
+    position: relative;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -15,26 +11,36 @@
     background-size: cover; 
 }
 .section-contact{
+    position: absolute;
     display: flex;
-    height: 500px;
+    height: 70vh;
     width: 100%;
-    background: rgb(255,0,0,0.3);
-  
-    // opacity: 0.5;
-    // transition: 0.3s;
-    // border-radius: 0.3s;
-    // opacity: 0.3s;
+    background: $bcgr-transp;
+    margin-top: 300px;
+    justify-content: flex-end;
+ }
+ .box-contact{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     background-color: #000000;
+     width: 30%;
+     height: 200px;
+     margin-right: 40px;
+     margin-top: 200px;
+    }
+.info-contact{
+     h1{
+        font-family: $header-l-text;
+         font-size: 3rem;
+         color: $text-dark-box;
+         padding-left: 30px;
+     }
+     p{
+        font-family: $header-l-text;
+        font-size: 1.4rem;
+        color: $text-dark-box;
+        padding-left: 30px;
+        letter-spacing: 5px;
+    }  
 }
-// .box-contact{
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     border: 1px solid black;
-//     width: 40%;
-//     height: 200px;
-//     margin-top: 50px;
-//     margin-bottom: 50px;
-//     margin-left: 800px;
-  
-// }
-

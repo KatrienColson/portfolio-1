@@ -30,7 +30,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: white;
+  background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.5));
   align-items: flex-start;
   position: fixed;
   width: 100%;
@@ -47,16 +47,17 @@ html {
   font-family: "Open Sans Condensed", sans-serif;
   margin-left: 40px;
   letter-spacing: 10px;
+  color: #000000;
 }
 
 .btn-nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   padding-top: 50px;
   font-family: "Nanum Gothic", sans-serif;
+  width: 100%;
+  justify-content: flex-end;
 }
 .btn-nav ul {
   display: flex;
@@ -68,11 +69,19 @@ html {
   list-style-type: none;
   padding-left: 40px;
   margin-left: 115px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .photo {
   /* The image used */
-  background-image: url("../img/background-1.jpg");
+  background-image: url("../img/horloge-photo.jpeg");
   /* Set a specific height */
   min-height: 500px;
   /* Create the parallax scrolling effect */
@@ -84,7 +93,7 @@ html {
 
 .main-about-me {
   height: auto;
-  background-color: lightgray;
+  background-color: #faf2f2;
   font-size: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -142,6 +151,7 @@ html {
   font-family: "Open Sans Condensed", sans-serif;
   text-align: center;
   padding-top: 2rem;
+  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -153,31 +163,26 @@ html {
   padding-bottom: 3rem;
   height: auto;
   width: 100%;
-  transition: 0.3s;
-  border: 0.3s;
-  border-radius: 0.3s;
-  box-shadow: 0.3s;
 }
 
 .grid, .flexbox, .flexbox-Grid, .bootstrap {
-  margin-left: 20px;
+  margin-left: 10px;
   text-align: center;
   width: 20%;
   padding-top: 2rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .grid p, .flexbox p, .flexbox-Grid p, .bootstrap p {
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2rem;
-}
-.grid p:hover, .flexbox p:hover, .flexbox-Grid p:hover, .bootstrap p:hover {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .photo-contact {
   /* The image used */
   background-image: url("../img/background-5.jpg");
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 100vh;
+  position: relative;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -186,10 +191,46 @@ html {
 }
 
 .section-contact {
+  position: absolute;
   display: flex;
-  height: 500px;
+  height: 70vh;
   width: 100%;
-  background: rgba(255, 0, 0, 0.3);
+  background: rgba(250, 242, 242, 0.5);
+  margin-top: 300px;
+  justify-content: flex-end;
+}
+
+.box-contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #000000;
+  width: 30%;
+  height: 200px;
+  margin-right: 40px;
+  margin-top: 200px;
+}
+
+.info-contact h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3rem;
+  color: #FFFFFF;
+  padding-left: 30px;
+}
+.info-contact p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  padding-left: 30px;
+  letter-spacing: 5px;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  background-color: "Open Sans Condensed", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
