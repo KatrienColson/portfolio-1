@@ -86,6 +86,8 @@ html {
   height: auto;
   background-color: lightgray;
   font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .title-about-me {
@@ -169,6 +171,25 @@ html {
 }
 .grid p:hover, .flexbox p:hover, .flexbox-Grid p:hover, .bootstrap p:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.photo-contact {
+  /* The image used */
+  background-image: url("../img/background-5.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-contact {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background: rgba(255, 0, 0, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -11,10 +11,15 @@
     background-repeat: no-repeat;
     background-size: cover; 
 }
+.selection-contact{
+
+}
 .main-about-me{
     height:auto;
     background-color:lightgray;
     font-size:1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .title-about-me{
     display: flex;
@@ -47,7 +52,7 @@
         font-family: $header-l-text;
         font-size: 1rem;
         width: 45%;
-       padding-right: 2.4rem;
+        padding-right: 2.4rem;
     }
 }
 

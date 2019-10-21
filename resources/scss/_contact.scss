@@ -1,0 +1,40 @@
+.photo-background-contact{
+
+}
+.photo-contact {
+    /* The image used */
+    background-image: url("../img/background-5.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.section-contact{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background: rgb(255,0,0,0.3);
+  
+    // opacity: 0.5;
+    // transition: 0.3s;
+    // border-radius: 0.3s;
+    // opacity: 0.3s;
+}
+// .box-contact{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     border: 1px solid black;
+//     width: 40%;
+//     height: 200px;
+//     margin-top: 50px;
+//     margin-bottom: 50px;
+//     margin-left: 800px;
+  
+// }
+
