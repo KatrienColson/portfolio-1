@@ -1,7 +1,27 @@
-.container-footer{
+.container-down{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: $header-l-text;
+}
+.list-down{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size:2rem; 
+        justify-content: center;
+        border: 1px solid black;
+    }
+    li{
+        display: flex;
+        list-style-type: none;
+        color: black;
+    }
 }
