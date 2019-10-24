@@ -3,25 +3,30 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    background-color: $header-l-text;
+    background-color: pink;
+    // background-color: $header-l-text;
 }
 .list-down{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
     padding-top: 5vh;
     padding-bottom: 5vh;
     ul{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        font-size:2rem; 
-        justify-content: center;
-        border: 1px solid black;
+        font-size:1rem; 
     }
     li{
         display: flex;
         list-style-type: none;
         color: black;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 }
+
+  
