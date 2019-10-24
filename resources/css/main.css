@@ -26,6 +26,11 @@ html {
   min-height: 100%;
 }
 
+h1 {
+  font-size: 0;
+  font-weight: normal;
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -68,10 +73,13 @@ html {
   display: flex;
   list-style-type: none;
   padding-left: 1rem;
-  margin-left: 10rem;
+  margin-left: 9rem;
   padding-right: 2rem;
   padding-bottom: 2rem;
   color: #000000;
+}
+.btn-nav li :hover {
+  color: #d89f9f;
 }
 
 a {
@@ -79,6 +87,117 @@ a {
   color: #000000;
 }
 
+/*aanpassen voor tablet-L*/
+@media screen and (max-width: 768px) {
+  .btn-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 2.5rem;
+    font-family: "Nanum Gothic", sans-serif;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .btn-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+  .btn-nav li {
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    color: #000000;
+  }
+  .btn-nav li :hover {
+    color: #d89f9f;
+  }
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px) {
+  .btn-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 2.5rem;
+    font-family: "Nanum Gothic", sans-serif;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .btn-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+  .btn-nav li {
+    display: flex;
+    list-style-type: none;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    color: #000000;
+  }
+  .btn-nav li :hover {
+    color: #d89f9f;
+  }
+}
+/*aanpassen voor gsm*/
+@media screen and (max-width: 320px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0.5));
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    z-index: 1;
+  }
+
+  .name {
+    width: 40%;
+    font-size: 5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Open Sans Condensed", sans-serif;
+    margin-left: 0.5rem;
+    color: #000000;
+  }
+
+  .btn-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: "Nanum Gothic", sans-serif;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .btn-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .btn-nav li {
+    display: flex;
+    height: auto;
+    list-style-type: none;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+    color: #000000;
+  }
+  .btn-nav li :hover {
+    color: #d89f9f;
+  }
+}
 .photo {
   /* The image used */
   background-image: url("../img/horloge-photo.jpeg");
@@ -134,6 +253,32 @@ a {
   padding-right: 2.4rem;
 }
 
+/*aanpassen voor tablet-L*/
+@media screen and (max-width: 768px) {
+  .boxen-about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+  .boxen-about-me .box-about-me {
+    align-items: center;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1rem;
+    width: 35%;
+    padding-left: 2.4rem;
+  }
+  .boxen-about-me .box-about-me-again {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1rem;
+    width: 35%;
+    padding-right: 2.4rem;
+  }
+}
+/*aanpassen voor tablet-S*/
+/*aanpassen voor tablet-S*/
 .container-portfolio {
   width: 100%;
   height: auto;
@@ -166,17 +311,48 @@ a {
 }
 
 .grid, .flexbox, .flexbox-Grid, .bootstrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 10px;
   text-align: center;
-  width: 20%;
-  padding-top: 2rem;
+  padding: 2rem;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.grid p, .flexbox p, .flexbox-Grid p, .bootstrap p {
+.grid .p, .flexbox .p, .flexbox-Grid .p, .bootstrap .p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 2rem;
 }
 
+/*aanpassen voor tablet-L*/
+@media screen and (max-width: 768px) {
+  .grid, .flexbox, .flexbox-Grid, .bootstrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .grid .p, .flexbox .p, .flexbox-Grid .p, .bootstrap .p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2rem;
+  }
+}
+/*aanpassen voor tablet-S*/
+/*aanpassen voor tablet-S*/
 .photo-contact {
   /* The image used */
   background-image: url("../img/background-5.jpg");
@@ -188,6 +364,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .section-contact {
@@ -225,12 +402,91 @@ a {
   letter-spacing: 0.3rem;
 }
 
+/*aanpassen voor tablet-L*/
+@media screen and (max-width: 768px) {
+  .section-contact {
+    position: absolute;
+    display: flex;
+    height: 65.5vh;
+    width: 100%;
+    background: rgba(250, 242, 242, 0.5);
+    margin-top: 16rem;
+    justify-content: flex-start;
+  }
+
+  .box-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #000000;
+    height: 13rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding-right: 10rem;
+  }
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px) {
+  .box-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #000000;
+    height: 13rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    padding-right: 14rem;
+  }
+}
+/*aanpassen voor GSM*/
+@media screen and (max-width: 320px) {
+  .section-contact {
+    position: absolute;
+    display: flex;
+    height: 65.5vh;
+    width: 100%;
+    background: rgba(250, 242, 242, 0.5);
+    margin-top: 16rem;
+    justify-content: flex-start;
+  }
+
+  .box-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #000000;
+    height: 8rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+    margin-left: 0.5rem;
+    padding-right: 11rem;
+    padding-left: 1rem;
+  }
+
+  .info-contact {
+    letter-spacing: 0;
+  }
+  .info-contact h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    padding-left: 0.5rem;
+  }
+  .info-contact p {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    padding-left: 0.5rem;
+  }
+}
 .container-down {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
-  background-color: pink;
+  background-color: #faf2f2;
 }
 
 .list-down {
@@ -254,6 +510,69 @@ a {
   color: black;
   margin-left: 4rem;
   margin-right: 4rem;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.list-down li :hover {
+  color: #d89f9f;
+}
+
+/*aanpassen voor tablet-L*/
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px) {
+  .list-down {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .list-down ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .list-down li {
+    display: flex;
+    list-style-type: none;
+    color: black;
+    margin-left: 1rem;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+  .list-down li :hover {
+    color: #d89f9f;
+  }
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px) {
+  .list-down {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  .list-down ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+  .list-down li {
+    display: flex;
+    list-style-type: none;
+    color: black;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-family: "Open Sans Condensed", sans-serif;
+  }
+  .list-down li :hover {
+    color: #d89f9f;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

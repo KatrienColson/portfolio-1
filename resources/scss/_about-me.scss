@@ -53,6 +53,39 @@
         padding-right: 2.4rem;
     }
 }
+/*aanpassen voor tablet-L*/
+@media screen and (max-width: 768px){
+    .boxen-about-me{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+    
+        .box-about-me{
+            align-items: center;
+            font-family: $header-l-text;
+            font-size: 1rem;
+            width: 35%;
+            padding-left: 2.4rem;
+        }
+        .box-about-me-again{
+            font-family: $header-l-text;
+            font-size: 1rem;
+            width: 35%;
+            padding-right: 2.4rem;
+        }
+    }
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px){
+
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px){
+
+}
 
 
 

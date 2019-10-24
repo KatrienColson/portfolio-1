@@ -27,15 +27,54 @@
     width: 100%;
 }
 .grid, .flexbox, .flexbox-Grid, .bootstrap{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin-left: 10px;
     text-align: center; 
-    width: 20%;
-    padding-top: 2rem;
+    padding: 2rem;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    p{
+   .p{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
         font-family: $header-l-text;
         font-size: 2rem;
     }
+}
+/*aanpassen voor tablet-L*/
+@media screen and (max-width: 768px){
+    .grid, .flexbox, .flexbox-Grid, .bootstrap{
+   
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 10px;
+        text-align: center; 
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+       .p{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-family: $header-l-text;
+            font-size: 2rem;
+        }
+    }
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px){
+
+}
+/*aanpassen voor tablet-S*/
+@media screen and (max-width: 600px){
+    
 }
 
 
