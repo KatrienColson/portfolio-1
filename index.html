@@ -11,8 +11,10 @@
 </head>
 <body>
     <nav class="navbar">
+        <div class="container-navbar">
+                
                 <div class="name">
-                    <strong>K</strong>atrien
+                    <span class ="letter">K</span>atrien
                 </div>
                 <div class="btn-nav">
                     <ul>
@@ -22,19 +24,15 @@
                         <li><a href="#portfolio-link">Portfolio</a></li>
                         <li><a href="#contact-link">Contact</a></li>
                     </ul>
-                </div> 
+                </div>
+        </div> 
     </nav>
         
-    <header>
-        
-        
-    </header>
-        
     <main class="photo-background" id="home-link">
-       
         <div class="photo"></div>
 <!--About-me-->
-        <div class="main-about-me" id="about-me-link"> 
+    <div class="main-about-me" id="about-me-link"> 
+        <div class="container-aboutme">
             <div class="title-about-me">
                 ABOUT ME
             </div>
@@ -57,8 +55,10 @@
                 </div> 
             </div>
         </div>
+    </div>
  <!--PORTFOLIO-->       
-        <div class="container-portfolio" id="portfolio-link"> 
+    <div class="container-portfolio" id="portfolio-link"> 
+        <div class="container-prt-all">
             <div class="title-portfolio">
                         PORTFOLIO
             </div>
@@ -66,37 +66,42 @@
 
                 <div class ="grid">
                     <a target="_blank" href="https://katriencolson.github.io/learning-markdown/exercises/2.css/3.grid/">
-                    <img src="resources/img/grid-sc.png" alt="grid" width="200" height="200">
+                    <img src="resources/img/grid-sc.png" alt="grid">
                     </a>
                     <div class="p">Grid</div>
                 </div>
 
                 <div class ="flexbox">
                     <a target="_blank" href="file:///home/katrien/Desktop/bcode%20opleiding/learning-markdown/exercises/2.css/4.media-queries/wowwee.html">
-                    <img src="resources/img/flexbox-sc.png" alt="flexbox" width="200" height="200">
+                    <img src="resources/img/flexbox-sc.png" alt="flexbox">
                     </a>
                     <div class="p">Flexbox</div>
                 </div>
 
                 <div class ="flexbox-Grid">
                         <a target="_blank" href="file:///home/katrien/Desktop/bcode%20opleiding/learning-markdown/exercises/3.sass/3.multi-pager/collection/home.html">
-                    <img src="resources/img/flexbox-grid-sc.png" alt="flexbox-grid" width="200" height="200">
+                    <img src="resources/img/flexbox-grid-sc.png" alt="flexbox-grid">
                     </a>
                     <div class="p">Flexbox & Grid</div>
                 </div>
 
                 <div class="bootstrap">
                     <a target="_blank" href="file:///home/katrien/Desktop/bcode%20opleiding/learning-markdown/exercises/3.sass/3.multi-pager/collection/home.html">
-                    <img src="resources/img/bootstrap-sc.png" alt="bootstrap" width="200" height="200">
+                    <img src="resources/img/bootstrap-sc.png" alt="bootstrap">
                     </a>
                     <div class="p">Bootstrap</div>
                 </div>
             </div>
-        </div>
-    </main>
+         </div>   
+    </div>
+</main>
 <!--CONTACT  --> 
-<section class="photo-contact"> 
+<footer class="container-down"> 
+    <section class="photo-contact"> 
+        
+                 
     <div class="section-contact">
+        <div class="container-contact"> 
         <div class="box-contact">
             <div class="info-contact"id="contact-link">
                 <h1>Contact</h1>
@@ -106,10 +111,12 @@
                 <p>katrien.colson@gmail.com</p>
             </div>
         </div>
-       
-    </div>
-</section>
-<footer class="container-down">
+        </div>
+        </div>
+    </section>
+        <div class="logo">
+            <img src="resources/img/kc-logo.png" alt="logo" width="30px">
+        </div>
     <div class="list-down">
     <ul>
         <li><a href= "https://github.com/" target="_blank">Github

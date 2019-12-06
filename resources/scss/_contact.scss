@@ -1,114 +1,98 @@
-.photo-contact {
-    /* The image used */
-    background-image: url("../img/background-5.jpg");
-    /* Set a specific height */
-    min-height: 100vh; 
-    position: relative;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    width: 100%;
-}
-.section-contact{
-    position: absolute;
-    display: flex;
-    height: 65.5vh;
-    width: 100%;
-    background: $bcgr-transp;
-    margin-top: 16rem;
-    justify-content: flex-end;
- }
- .box-contact{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     background-color: #000000;
-     width: 30%;
-     height: 13rem;
-     margin-right: 3rem;
-     margin-top: 13rem;
+//computerscherm max 1200
+@media (min-width: 769px){
+    .photo-contact {
+        /* The image used */
+        background-image: url("../img/background-5.jpg");
+        /* Set a specific height */
+        min-height: 100vh; 
+        position: relative;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 100%;
     }
-.info-contact{
-     h1{
-        font-family: $header-l-text;
-         font-size: 3rem;
-         color: $text-dark-box;
-         padding-left: 4rem;
-     }
-     p{
-        font-family: $header-l-text;
-        font-size: 1.4rem;
-        color: $text-dark-box;
-        padding-left: 4rem;
-        letter-spacing: 0.3rem;
-    }  
-}
-/*aanpassen voor tablet-L*/
-@media screen and (max-width: 768px){
     .section-contact{
-        position: absolute;
+        // position: absolute;
         display: flex;
         height: 65.5vh;
         width: 100%;
         background: $bcgr-transp;
         margin-top: 16rem;
-        justify-content: flex-start;
-     }
-     .box-contact{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: #000000;
-        height: 13rem;
-        margin-right: 1rem;
-        margin-top: 4rem;
-        margin-left: 2rem;
-        padding-right: 10rem;
-       }
-}
-/*aanpassen voor tablet-S*/
-@media screen and (max-width: 600px){
+        justify-content: flex-end; 
+    }
+    .container-contact{
+        margin: 0 10em 0 10em;
+    }
     .box-contact{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        background-color: #000000;
+        width: 30%;
         height: 13rem;
-        margin-right: 1rem;
-        margin-top: 4rem;
-        margin-left: 2rem;
-        padding-right: 14rem;
-       }
-}
-/*aanpassen voor GSM*/
-@media screen and (max-width: 320px){
-    .section-contact{
-        position: absolute;
-        display: flex;
-        height: 65.5vh;
-        width: 100%;
-        background: $bcgr-transp;
-        margin-top: 16rem;
-        justify-content: flex-start;
-     }
-    .box-contact{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        background-color: #000000;
-        height: 8rem;
-        margin-right: 1rem;
-        margin-top: 4rem;
-        margin-left: 0.5rem;
-        padding-right: 11rem;
-        padding-left: 1rem;
-       }
+        margin-top: 10rem;
+    }
     .info-contact{
+        background-color :#292426;
+        padding: 10px;
         h1{
             font-family: $header-l-text;
+            font-size: 3rem;
+            color: $text-dark-box;
+            padding-left: 1rem;
+        }
+        p{
+            font-family: $header-l-text;
             font-size: 1.4rem;
+            color: $text-dark-box;
+            padding-left: 2rem;
+            padding-right: 1rem;
+            letter-spacing: 0.3rem;
+        }  
+    }
+}
+
+//tablet and smartphone landscape
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .photo-contact {
+        /* The image used */
+        background-image: url("../img/background-5.jpg");
+        /* Set a specific height */
+        min-height: 100vh; 
+        position: relative;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 100%;
+    }
+    .section-contact{
+        // position: absolute;
+        display: flex;
+        height: 65.5vh;
+        width: 100%;
+        background: $bcgr-transp;
+        //margin-top: 16rem;
+        justify-content: flex-end; 
+    }
+    .container-contact{
+        margin: 0 3em 0 3em;
+    }
+    .box-contact{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+        margin-top: 5rem;
+    }
+    .info-contact{
+        background-color :#292426;
+        padding: 5px;
+        h1{
+            font-family: $header-l-text;
+            font-size: 1.5rem;
             color: $text-dark-box;
             padding-left: 0.5rem;
         }
@@ -116,7 +100,65 @@
             font-family: $header-l-text;
             font-size: 1rem;
             color: $text-dark-box;
-            padding-left: 0.5rem;
-        }   letter-spacing: 0;
-    }   
+            padding-left: 2rem;
+            padding-right: 1rem;
+        }  
+    }
 }
+
+//smartphone landscape staat bij tablet
+
+//smartphone
+@media screen and (max-width: 320px){
+    .photo-contact {
+        /* The image used */
+        background-image: url("../img/background-5.jpg");
+        /* Set a specific height */
+        min-height: 100vh; 
+        position: relative;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        width: 100%;
+    }
+    .section-contact{
+        position: absolute;
+        display: flex;
+        height: 65.5vh;
+        width: 100%;
+        background: $bcgr-transp;
+        //margin-top: 16rem;
+        justify-content: flex-end; 
+    }
+    .container-contact{
+        margin: 0 0.8em 0 0.8em;
+    }
+    .box-contact{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+        margin-top: 5rem;
+    }
+    .info-contact{
+        background-color :#292426;
+        //padding: 5px;
+        h1{
+            font-family: $header-l-text;
+            font-size: 1.5rem;
+            color: $text-dark-box;
+            padding-left: 0.5rem;
+        }
+        p{
+            font-family: $header-l-text;
+            font-size: 1rem;
+            color: $text-dark-box;
+            padding-left: 2rem;
+            padding-right: 1rem;
+        }  
+    }
+
+}
+

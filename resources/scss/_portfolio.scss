@@ -1,81 +1,174 @@
-.container-portfolio{
-    width: 100%;
-    height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.title-portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-family: $header-l-text;
-    text-align: center;
-    padding-top: 2rem; 
-    padding-bottom: 1rem;
-    width: 100%; 
-}
-.boxen-portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 3rem;
-    height: auto;
-    width: 100%;
-}
-.grid, .flexbox, .flexbox-Grid, .bootstrap{
-   
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 10px;
-    text-align: center; 
-    padding: 2rem;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-   .p{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        font-family: $header-l-text;
-        font-size: 2rem;
+//computerscherm max 1200 and landscape table
+@media (min-width: 769px){
+    .container-portfolio{
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-}
-/*aanpassen voor tablet-L*/
-@media screen and (max-width: 768px){
+    .container-prt-all{
+        margin: 0 10em 0 10em;
+    }
+    .title-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: $header-l-text;
+        color: $text-color;
+        text-align: center;
+        padding-top: 2rem; 
+        padding-bottom: 2rem;
+        width: 100%; 
+    }
+    .boxen-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+        height: auto;
+        width: 100%;
+    }
     .grid, .flexbox, .flexbox-Grid, .bootstrap{
-   
+    
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-left: 10px;
         text-align: center; 
-        padding: 2rem;
-        margin-bottom: 1.5rem;
+        padding: 1.0rem;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-       .p{
+    img{
+        width: 180px;
+        height: 150px;
+    }
+        .p{
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: space-evenly;
             font-family: $header-l-text;
+            color: $text-color;
             font-size: 2rem;
         }
     }
 }
-/*aanpassen voor tablet-S*/
-@media screen and (max-width: 600px){
+//tablet landscape, staat bij schermgrootte 1200
 
+//tablet and smartphone landscape
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .container-portfolio{
+        width: 100%;
+        height: auto;
+    }
+    .container-prt-all{
+        margin: 0 3em 0 3em;
+    }
+    .title-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        font-family: $header-l-text;
+        color: $text-color;
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem; 
+        width: 100%; 
+    }
+    .boxen-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+        height: auto;
+        width: 100%;
+    }
+    .grid, .flexbox, .flexbox-Grid, .bootstrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center; 
+        padding: 1.0rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    img{
+        width: 150px;
+        height: 130px;
+    }
+    .p{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-family: $header-l-text;
+            color: $text-color;
+            font-size: 2rem;
+        }
+    }
 }
-/*aanpassen voor tablet-S*/
-@media screen and (max-width: 600px){
-    
+//smartphone landscape staat bij tablet
+
+
+//smartphone
+@media screen and (max-width: 320px){
+    .container-portfolio{
+        width: 100%;
+        height: auto;
+    }
+    .container-prt-all{
+        margin: 0 0.8em 0 0.8em;
+    }
+    .title-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-family: $header-l-text;
+        color: $text-color;
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem; 
+        width: 100%; 
+    }
+    .boxen-portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+        height: auto;
+        width: 100%;
+    }
+    .grid, .flexbox, .flexbox-Grid, .bootstrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center; 
+        padding: 1.0rem;
+        margin-top: 0.5rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    img{
+        width: 100px;
+        height: 80px;
+    }
+        .p{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-family: $header-l-text;
+            color: $text-color;
+            font-size: 1rem;
+        }
+    }
 }
-
-
-
