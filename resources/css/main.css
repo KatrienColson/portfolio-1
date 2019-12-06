@@ -545,6 +545,7 @@ h1 {
     justify-content: space-evenly;
     text-align: center;
     padding: 1rem;
+    margin-top: 0.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
   .grid img, .flexbox img, .flexbox-Grid img, .bootstrap img {
@@ -782,7 +783,7 @@ h1 {
     padding-right: 1rem;
   }
 }
-@media (min-width: 321px) {
+@media (min-width: 568px) {
   .container-down {
     display: flex;
     flex-direction: column;
@@ -825,7 +826,7 @@ h1 {
     color: #d89f9f;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 568px) {
   .container-down {
     display: flex;
     flex-direction: column;
@@ -847,7 +848,6 @@ h1 {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding-top: 5vh;
     padding-bottom: 5vh;
   }
   .list-down ul {
@@ -868,6 +868,5 @@ h1 {
     color: #d89f9f;
   }
 }
-/*aanpassen voor tablet-S*/
 
 /*# sourceMappingURL=main.css.map */

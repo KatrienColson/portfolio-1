@@ -1,5 +1,5 @@
 //computerscherm max 1200 and landscape tablet and tablet and smartphone landscape
-@media (min-width: 321px){
+@media (min-width: 568px){
     .container-down{
         display: flex;
         flex-direction: column;
@@ -44,10 +44,8 @@
 
 //tablet, staat bij schermgrootte 1200
 
-//smartphone landscape staat bij tablet
-
-//smartphone
-@media screen and (max-width: 320px){
+//smartphone staat bij smartphone landschap
+@media screen and (max-width: 568px){
     .container-down{
         display: flex;
         flex-direction: column;
@@ -67,7 +65,6 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        padding-top: 5vh;
         padding-bottom: 5vh;
         ul{
             display: flex;
@@ -88,38 +85,4 @@
         }
     }
 
-}
-
-
-
-/*aanpassen voor tablet-S*/
-// @media screen and (max-width: 320px){
-//     .list-down{
-//         display: flex;
-//         flex-wrap: wrap;
-//         flex-direction: row;
-//         justify-content: center;
-//         width: 100%;
-//         padding-top: 3vh;
-//         padding-bottom: 3vh;
-//         ul{
-//             display: flex;
-//             flex-wrap: wrap;
-//             flex-direction: row;
-//             font-size:1rem; 
-//         }
-//         li{
-//             display: flex;
-//             list-style-type: none;
-//             color: black;
-//             margin-left: 4rem;
-//             margin-right: 4rem;
-//             font-family: $header-l-text;
-//             :hover{
-//                 color: rgb(216, 159, 159);
-//             }
-//         }
-//     } 
-// }
-
-  
+}  
