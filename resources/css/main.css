@@ -57,7 +57,6 @@ h1 {
     flex-direction: row;
     font-family: "Cinzel", serif;
     letter-spacing: 0.2rem;
-    padding-top: 1.5rem;
     background: -webkit-linear-gradient(#292426, #dec9ab);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -85,7 +84,7 @@ h1 {
   .btn-nav li {
     display: flex;
     list-style-type: none;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     margin-left: 4rem;
     color: #292426;
     font-family: "Open Sans Condensed", sans-serif;
@@ -146,7 +145,7 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     width: 30%;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
   .btn-nav ul {
     display: flex;
@@ -159,8 +158,8 @@ h1 {
     display: flex;
     align-items: center;
     list-style-type: none;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
     border-bottom: 1px solid #292426;
     color: #292426;
     font-family: "Open Sans Condensed", sans-serif;
@@ -225,7 +224,7 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     width: 30%;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
   .btn-nav ul {
     display: flex;
@@ -238,12 +237,12 @@ h1 {
     display: flex;
     align-items: center;
     list-style-type: none;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
     border-bottom: 1px solid #292426;
     color: #292426;
     font-family: "Open Sans Condensed", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .btn-nav li:last-child {
     border: none;
@@ -500,6 +499,12 @@ h1 {
     font-size: 2rem;
   }
 
+  .textinformation {
+    color: #292426;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 0 40px;
+  }
+
   .pijlen {
     display: flex;
     flex-direction: row;
@@ -629,6 +634,12 @@ h1 {
     font-size: 2rem;
   }
 
+  .textinformation {
+    color: #292426;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 0 40px;
+  }
+
   .pijlen {
     display: flex;
     flex-direction: row;
@@ -752,6 +763,12 @@ h1 {
     font-family: "Open Sans Condensed", sans-serif;
     color: #292426;
     font-size: 1rem;
+  }
+
+  .textinformation {
+    color: #292426;
+    font-family: "Open Sans Condensed", sans-serif;
+    padding: 0 40px;
   }
 
   .pijlen {
@@ -995,7 +1012,13 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 3vh;
+  }
+  .logo .img {
+    padding-bottom: 1rem;
+  }
+  .logo .copieright {
+    font-size: 10px;
+    padding-bottom: 1rem;
   }
 
   .list-down {
@@ -1004,7 +1027,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding-bottom: 4vh;
+    padding-bottom: 2vh;
   }
   .list-down ul {
     display: flex;
@@ -1038,7 +1061,13 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 3vh;
+  }
+  .logo .img {
+    padding-bottom: 1rem;
+  }
+  .logo .copieright {
+    font-size: 10px;
+    padding-bottom: 1rem;
   }
 
   .list-down {
@@ -1047,7 +1076,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding-bottom: 5vh;
+    padding-bottom: 1vh;
   }
   .list-down ul {
     display: flex;

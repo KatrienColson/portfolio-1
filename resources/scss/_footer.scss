@@ -11,7 +11,13 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-top: 3vh;
+        .img{
+            padding-bottom: 1rem;
+        }
+        .copieright{
+            font-size: 10px;
+            padding-bottom: 1rem;
+        }
     }
     .list-down{
         display: flex;
@@ -19,7 +25,7 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        padding-bottom: 4vh;
+        padding-bottom: 2vh;
         ul{
             display: flex;
             flex-wrap: wrap;
@@ -39,6 +45,7 @@
             }
         }
     }
+    
 }
 //tablet landscape, staat bij schermgrootte 1200
 
@@ -57,7 +64,13 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-top: 3vh;
+        .img{
+            padding-bottom: 1rem;
+        }
+        .copieright{
+            font-size: 10px;
+            padding-bottom: 1rem;
+        }
     }
     .list-down{
         display: flex;
@@ -65,7 +78,7 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        padding-bottom: 5vh;
+        padding-bottom: 1vh;
         ul{
             display: flex;
             flex-wrap: wrap;
