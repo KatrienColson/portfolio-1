@@ -35,7 +35,7 @@
             font-family: $header-l-text;
             color: $text-color;
             :hover{
-                color: rgb(216, 159, 159);
+                color: $text-hover-link;
             }
         }
     }
@@ -80,7 +80,7 @@
             color: $text-color;
             margin-left: 0.8rem;
             :hover{
-                color: rgb(216, 159, 159);
+                color: $text-hover-link;
             }
         }
     }

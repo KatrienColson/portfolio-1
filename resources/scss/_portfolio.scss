@@ -17,23 +17,22 @@
         align-items: center;
         font-size: 3rem;
         font-family: $header-l-text;
-        color: $text-color;
+        color: $text-title-color;
         text-align: center;
         padding-top: 2rem; 
         padding-bottom: 2rem;
         width: 100%; 
     }
-    .boxen-portfolio{
+    .slideshow-container{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         padding-bottom: 3rem;
         height: auto;
         width: 100%;
     }
-    .grid, .flexbox, .flexbox-Grid, .bootstrap{
-    
+    .mySlides{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -55,7 +54,68 @@
             font-size: 2rem;
         }
     }
+.pijlen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
 }
+/* Next & previous buttons */
+.prev, .next {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    /*position: absolute;*/
+    top: 100%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:  rgb(216, 159, 159);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .textinformation{
+      display: flex;
+      justify-content: space-evenly;
+  }
+}
+
 //tablet landscape, staat bij schermgrootte 1200
 
 //tablet and smartphone landscape
@@ -81,16 +141,16 @@
         padding-bottom: 2rem; 
         width: 100%; 
     }
-    .boxen-portfolio{
+    .slideshow-container{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         padding-bottom: 3rem;
         height: auto;
         width: 100%;
     }
-    .grid, .flexbox, .flexbox-Grid, .bootstrap{
+    .mySlides{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -113,6 +173,62 @@
             font-size: 2rem;
         }
     }
+.pijlen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+/* Next & previous buttons */
+.prev, .next {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    /*position: absolute;*/
+    top: 100%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:  rgb(216, 159, 159);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+  }
+
+  /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 }
 //smartphone landscape staat bij tablet
 
@@ -140,16 +256,16 @@
         padding-bottom: 2rem; 
         width: 100%; 
     }
-    .boxen-portfolio{
+    .slideshow-container{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         padding-bottom: 3rem;
         height: auto;
         width: 100%;
     }
-    .grid, .flexbox, .flexbox-Grid, .bootstrap{
+    .mySlides{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -172,4 +288,60 @@
             font-size: 1rem;
         }
     }
+    .pijlen{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+        display: flex;
+        text-align: center;
+        cursor: pointer;
+        /*position: absolute;*/
+        top: 100%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color:  rgb(216, 159, 159);
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none; 
+      }
+    
+      /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 10px 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
 }

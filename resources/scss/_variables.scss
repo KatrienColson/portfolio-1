@@ -4,8 +4,10 @@ $btn-nav: 'Nanum Gothic', sans-serif;//font nav knoppen//
 //kleur teksten//
 $text-color: #292426; //kleur gewone teksten//
 $text-title-color: #292426; //kleur grote tekst//
-$text-dark-box: #FFFFFF; //kleur tekst in donkere box//
+$text-dark-box: rgb(250, 242, 242); //kleur tekst in donkere box//
+$text-hover-link:rgb(216, 159, 159);//kleur hover link in nav en footer//
 //background transparant gedeelte contact//
 $bcgr-transp: rgb(250, 242, 242,0.5);
 $bcgr-about-me: rgb(250, 242, 242);
 $bcgr-footer: rgb(250, 242, 242);
+$bcgr-dark-box: #292426;

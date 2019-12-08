@@ -57,7 +57,6 @@ h1 {
     flex-direction: row;
     font-family: "Cinzel", serif;
     letter-spacing: 0.2rem;
-    color: #dec9ab;
     padding-top: 1.5rem;
     background: -webkit-linear-gradient(#292426, #dec9ab);
     -webkit-background-clip: text;
@@ -77,7 +76,6 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
-    padding-top: 1rem;
   }
   .btn-nav ul {
     display: flex;
@@ -129,7 +127,6 @@ h1 {
     text-align: right;
     font-family: "Cinzel", serif;
     letter-spacing: 0.1rem;
-    color: #dec9ab;
     padding-top: 1rem;
     background: -webkit-linear-gradient(#292426, #dec9ab);
     -webkit-background-clip: text;
@@ -470,17 +467,17 @@ h1 {
     width: 100%;
   }
 
-  .boxen-portfolio {
+  .slideshow-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 3rem;
     height: auto;
     width: 100%;
   }
 
-  .grid, .flexbox, .flexbox-Grid, .bootstrap {
+  .mySlides {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -489,11 +486,11 @@ h1 {
     padding: 1rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
-  .grid img, .flexbox img, .flexbox-Grid img, .bootstrap img {
+  .mySlides img {
     width: 180px;
     height: 150px;
   }
-  .grid .p, .flexbox .p, .flexbox-Grid .p, .bootstrap .p {
+  .mySlides .p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -501,6 +498,76 @@ h1 {
     font-family: "Open Sans Condensed", sans-serif;
     color: #292426;
     font-size: 2rem;
+  }
+
+  .pijlen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    /*position: absolute;*/
+    top: 100%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #d89f9f;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .textinformation {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 768px) {
@@ -528,17 +595,17 @@ h1 {
     width: 100%;
   }
 
-  .boxen-portfolio {
+  .slideshow-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 3rem;
     height: auto;
     width: 100%;
   }
 
-  .grid, .flexbox, .flexbox-Grid, .bootstrap {
+  .mySlides {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -548,11 +615,11 @@ h1 {
     margin-top: 0.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
-  .grid img, .flexbox img, .flexbox-Grid img, .bootstrap img {
+  .mySlides img {
     width: 150px;
     height: 130px;
   }
-  .grid .p, .flexbox .p, .flexbox-Grid .p, .bootstrap .p {
+  .mySlides .p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -560,6 +627,72 @@ h1 {
     font-family: "Open Sans Condensed", sans-serif;
     color: #292426;
     font-size: 2rem;
+  }
+
+  .pijlen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    /*position: absolute;*/
+    top: 100%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #d89f9f;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media screen and (max-width: 320px) {
@@ -587,17 +720,17 @@ h1 {
     width: 100%;
   }
 
-  .boxen-portfolio {
+  .slideshow-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-bottom: 3rem;
     height: auto;
     width: 100%;
   }
 
-  .grid, .flexbox, .flexbox-Grid, .bootstrap {
+  .mySlides {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -607,11 +740,11 @@ h1 {
     margin-top: 0.5rem;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
-  .grid img, .flexbox img, .flexbox-Grid img, .bootstrap img {
+  .mySlides img {
     width: 100px;
     height: 80px;
   }
-  .grid .p, .flexbox .p, .flexbox-Grid .p, .bootstrap .p {
+  .mySlides .p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -619,6 +752,72 @@ h1 {
     font-family: "Open Sans Condensed", sans-serif;
     color: #292426;
     font-size: 1rem;
+  }
+
+  .pijlen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    /*position: absolute;*/
+    top: 100%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #d89f9f;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 769px) {
@@ -665,13 +864,13 @@ h1 {
   .info-contact h1 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 3rem;
-    color: #FFFFFF;
+    color: #faf2f2;
     padding-left: 1rem;
   }
   .info-contact p {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.4rem;
-    color: #FFFFFF;
+    color: #faf2f2;
     padding-left: 2rem;
     padding-right: 1rem;
     letter-spacing: 0.3rem;
@@ -719,13 +918,13 @@ h1 {
   .info-contact h1 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #faf2f2;
     padding-left: 0.5rem;
   }
   .info-contact p {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #faf2f2;
     padding-left: 2rem;
     padding-right: 1rem;
   }
@@ -772,13 +971,13 @@ h1 {
   .info-contact h1 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #faf2f2;
     padding-left: 0.5rem;
   }
   .info-contact p {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #faf2f2;
     padding-left: 2rem;
     padding-right: 1rem;
   }

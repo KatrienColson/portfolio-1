@@ -24,7 +24,7 @@
         flex-direction: row;
         font-family: 'Cinzel', serif;
         letter-spacing: 0.2rem;
-        color: #dec9ab;
+        //color: #dec9ab;
         padding-top: 1.5rem;
         background: -webkit-linear-gradient(#292426, #dec9ab);
         -webkit-background-clip: text;
@@ -34,7 +34,6 @@
     font-size: 7rem;
     font-weight: bold;
     font-style: italic;
-    //font-family: 'Great Vibes', cursive;
     font-family: 'Cinzel', serif;
     color:$text-color;
     
@@ -43,9 +42,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-end;
-        padding-top: 1.0rem; 
-        
+        justify-content: flex-end;      
         
         ul{
             display: flex;
@@ -61,13 +58,12 @@
             font-family: $header-l-text;
             font-size: 1.2rem;
             :hover{
-                color: rgb(216, 159, 159);
+                color: $text-hover-link;
             }
         }
     }
         a{   
             text-decoration: none;
-            //color: $text-color;
             color:$text-color; 
         }
 }
@@ -97,7 +93,6 @@
         text-align: right;
         font-family: 'Cinzel', serif;
         letter-spacing: 0.1rem;
-        color: #dec9ab;
         padding-top: 1rem;
         background: -webkit-linear-gradient(#292426, #dec9ab);
         -webkit-background-clip: text;
@@ -107,7 +102,6 @@
     font-size: 4rem;
     font-weight: bold;
     font-style: italic;
-    //font-family: 'Great Vibes', cursive;
     font-family: 'Cinzel', serif;
     color:$text-color;
     }
@@ -141,13 +135,12 @@
                 border: none;
             }
             :hover{
-                color: rgb(216, 159, 159);
+                color:$text-hover-link;
             }
         }
     }
         a{   
             text-decoration: none;
-            //color: $text-color;
             color:$text-color; 
         }
 }
@@ -222,7 +215,7 @@
                 border: none;
             }
             :hover{
-                color: rgb(216, 159, 159);
+                color: $text-hover-link;
             }
         }
     }
